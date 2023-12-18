@@ -1,14 +1,13 @@
-public car(String make, String model, int year, String color, String vin, int topspeed, double efficency, double range, String fueltype, double fueltank, double mileage)
+public class Main
+{
+
+    public static void main(String args[])
     {
-        this.make = make;
-        this.model = model;
-        this.year = year;
-        this.color = color;
-        this.vin = vin;
-        this.topspeed = topspeed;
-        this.efficency = efficency;
-        this.range = range;
-        this.fueltype = fueltype;
-        this.fueltank = fueltank;
-        this.mileage = mileage;
+        car adam = new car("Kia", "Forte", 2023, "Grey","1829689390", 160,33.00,438.0, "Standard Gasoline",415.0, 12000.0);
+        System.out.println(adam);
+        car adam2 = new car();
+        System.out.println(adam2);
+        System.out.println(adam2.carFax());
     }
+
+}
